@@ -1,0 +1,32 @@
+_id: req_103b1d7812ac4069adc1902d789128bb
+type: Request
+parentId: fld_d4019caeab5542d19e1b6818a798929d
+modified: 1659451288655
+created: 1658911163879
+url: "{{ _.base_url }}/entry-reminder"
+name: Entry Reminders
+description: ""
+method: GET
+body: {}
+parameters: []
+headers:
+  - id: pair_3c11345dfefe4b6587d0faae2c3e2eff
+    name: Content-Type
+    value: application/json
+    description: ""
+  - id: pair_04d1b2c6194c49ab93419ab4f3f130f2
+    name: Accept
+    value: application/json
+    description: ""
+authentication:
+  type: bearer
+  token: Bearer {% response 'body', 'req_c743795d592348dc9643f53c79d7b2f7',
+    'b64::JC5hY2Nlc3NfdG9rZW4=::46b', 'when-expired', 60 %}
+metaSortKey: -1658842956462.5
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

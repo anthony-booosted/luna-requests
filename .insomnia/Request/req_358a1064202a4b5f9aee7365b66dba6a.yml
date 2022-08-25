@@ -1,0 +1,44 @@
+_id: req_358a1064202a4b5f9aee7365b66dba6a
+type: Request
+parentId: fld_84a21b1169aa446d8ce1176a1c97cc11
+modified: 1661420932872
+created: 1661414915814
+url: "{{ _.base_url }}/v1/collections/f7663ef5-ce26-4395-9401-e70bcd698bd1"
+name: Update Collection
+description: ""
+method: PUT
+body:
+  mimeType: application/json
+  text: |-
+    {
+
+    	"title":"new title",
+    	"confidence":"3",
+    	"target_date":"2023-01-01",
+    	"learning_mode":"3",
+    	"cram_mode":"0",
+    	"difficulty":"0.7",
+    	"review_reminders":"13:01:59",
+    	"include_weekends":"2123"
+    }
+parameters:
+  - id: pair_f2c5933d90bd4cacac7b90862e406988
+    name: ""
+    value: ""
+    description: ""
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_d2dca207529442e5a3841b4f79073590
+authentication:
+  type: bearer
+  token: Bearer {% response 'body', 'req_857dfb24fc814274ae8dd82d8e6c53f9',
+    'b64::JC5kYXRhLmFjY2Vzc190b2tlbg==::46b', 'when-expired', 60 %}
+metaSortKey: -1660581207181.5
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

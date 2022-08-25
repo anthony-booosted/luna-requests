@@ -1,0 +1,42 @@
+_id: req_08a610287e134e94a08fc3529f2954ca
+type: Request
+parentId: fld_45b5fd414c8c46c993b5b8eff554119a
+modified: 1661441855771
+created: 1661430826856
+url: "{{ _.base_url
+  }}/v1/collections/49071255-b596-400a-9d66-59ba0446a239/cards/beadeee7-96c3-41\
+  e6-8dd7-01b3b32e95da/instances/5c7ea17d-4b97-4ee9-97ee-58e06674db16"
+name: Update Card Instance
+description: ""
+method: PUT
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"question":"some question for a new instance 2",
+    	"is_true":false,
+    	"answer":"This is my new answer",
+    	"is_suggestion":"1",
+    	"card_type":"0"
+    }
+parameters:
+  - id: pair_f2c5933d90bd4cacac7b90862e406988
+    name: ""
+    value: ""
+    description: ""
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_ef037cb4f088466bbbd36aa13fa7e8de
+authentication:
+  type: bearer
+  token: Bearer {% response 'body', 'req_857dfb24fc814274ae8dd82d8e6c53f9',
+    'b64::JC5kYXRhLmFjY2Vzc190b2tlbg==::46b', 'when-expired', 60 %}
+metaSortKey: -1660581207250.25
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

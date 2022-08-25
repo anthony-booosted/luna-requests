@@ -1,0 +1,30 @@
+_id: req_4826b27362cd4c88b48d8cb34b27d521
+type: Request
+parentId: fld_4162c63a614148eebc0f9b0b9fcc6e63
+modified: 1661441857644
+created: 1661258024265
+url: "{{ _.base_url
+  }}/v1/collections/f7663ef5-ce26-4395-9401-e70bcd698bd1/cards/ed324161-a49b-43\
+  c1-a98e-e80d481574f7"
+name: Delete Card
+description: ""
+method: DELETE
+body: {}
+parameters:
+  - id: pair_f2c5933d90bd4cacac7b90862e406988
+    name: ""
+    value: ""
+    description: ""
+headers: []
+authentication:
+  type: bearer
+  token: Bearer {% response 'body', 'req_857dfb24fc814274ae8dd82d8e6c53f9',
+    'b64::JC5kYXRhLmFjY2Vzc190b2tlbg==::46b', 'when-expired', 60 %}
+metaSortKey: -1660581207081.5
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

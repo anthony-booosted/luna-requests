@@ -1,0 +1,65 @@
+_id: req_4e37d6ebb67c48eb916773c82759e01b
+type: Request
+parentId: fld_d4019caeab5542d19e1b6818a798929d
+modified: 1659431938203
+created: 1658843925310
+url: "{{ _.base_url }}/entry"
+name: Create Entry
+description: ""
+method: POST
+body: {}
+parameters:
+  - id: pair_67b52f52c9ac477d953a7f05759e5e26
+    name: entry_type_id
+    value: "1"
+    description: ""
+  - id: pair_b67a368a34bf4c38ac94b2a0baaba574
+    name: entry_category_id
+    value: "3"
+    description: ""
+  - id: pair_b79aa725c354467bb01f459c578fce15
+    name: task_priority_id
+    value: "3"
+    description: ""
+  - id: pair_0a2fe50ef1364f8cb4604b9da5eec10b
+    name: title
+    value: Test Entry
+    description: ""
+  - id: pair_ea6666de67464050a23939d38a45982e
+    name: color
+    value: "#f5f5f5"
+    description: ""
+  - id: pair_1ee51d630874459297b380a46ba3f9f6
+    name: due_date
+    value: 2022-08-03T13:00:00.000
+    description: ""
+  - id: pair_dd07327db63e447fa66a98de58ce09dc
+    name: notes
+    value: These are some notes
+    description: ""
+  - id: pair_69dd01c0426541caa0f2f34e18c69d9a
+    name: location
+    value: Home
+    description: ""
+headers:
+  - id: pair_3c11345dfefe4b6587d0faae2c3e2eff
+    name: Content-Type
+    value: application/json
+    description: ""
+  - id: pair_04d1b2c6194c49ab93419ab4f3f130f2
+    name: Accept
+    value: application/json
+    description: ""
+authentication:
+  type: bearer
+  token: "{% response 'body', 'req_c743795d592348dc9643f53c79d7b2f7',
+    'b64::JC5hY2Nlc3NfdG9rZW4=::46b', 'when-expired', 60 %}"
+  prefix: Bearer
+metaSortKey: -1658842956425
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global
